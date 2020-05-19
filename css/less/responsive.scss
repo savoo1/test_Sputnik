@@ -183,3 +183,28 @@
 		width: calc(100% - 70px);
 	}
 }
+
+
+@media(max-height: 600px){
+	.left_menu{
+		
+
+		.menu_cont{
+			height: calc(100vh - 70px);
+			position: relative;
+
+			overflow: auto;
+			overflow-x: hidden;
+
+		}
+	}
+	.left_menu .down_menu{
+		bottom: unset;
+		position: relative;
+		margin-top: 30px;
+		padding-bottom: 20px;
+	}
+	.left_menu .down_menu .copyright{
+		bottom: 22px;
+	}
+}
