@@ -1,0 +1,185 @@
+@media(min-width: 1550px){
+	.login_page .left_side .contplace{
+		left: unset;
+		right: 150px;
+	}
+	.login_page .rightside .contplace{
+		right: unset;
+		left: 150px;
+	}
+}
+.top_nav .hambmenu_phone{
+	display: none;
+}
+
+@media(max-width: 991px){
+	.your_locations {
+	    padding: 85px 15px 30px 15px;
+	}
+	.your_locations .placefortable tbody td:nth-child(4) .cont{
+		margin-left: 5px;
+	}
+	.your_locations .placefortable tbody td:nth-child(4){
+		min-width: 55px;
+	}
+	.left_menu .logoplace{
+		padding-left: 14px;
+	}
+	.left_menu .main_menu .item a{
+		padding-top: 13px;
+		padding-bottom: 12px;
+	}
+	#mapid .leaflet-tooltip-pane{
+		display: none;
+	}
+	.main_content_def{
+		width: 100% !important;
+		margin: 0;
+	}
+	.top_nav .hambmenu_phone{
+		display: block;
+	}
+	.left_menu_active{
+		width: 320px;
+	}
+	.left_menu_opened {
+	    width: 100%;
+	    left: 0;
+	}
+	.left_menu{
+		width: 320px;
+		left: -320px;
+	}
+	.left_menu_active{
+		left: 0;
+	}
+	.left_menu .logoplace .hambmenu_desktop{
+		display: none;
+	}
+	.left_menu .logoplace .logo, .left_menu .logoplace .xicon img{
+		display: block;
+		visibility: visible;
+		opacity: 1;
+		max-width: 170px;
+	}
+	.left_menu .logoplace .xicon{
+		visibility: visible;
+		opacity: 1;
+		max-width: 170px;
+		display: block;
+	}
+	.left_menu .main_menu .item a span{
+		padding-left: 15px;
+	}
+	.left_menu .down_menu{
+		margin-top: 0;
+		bottom: 10px;
+		position: absolute;
+	}
+	.left_menu .down_menu .copyright{
+	    position: absolute;
+	    bottom: 2px;
+	    left: 130px;
+	}
+	.top_nav_overinfo_opened {
+	    width: 100%;
+	    right: 0;
+	}
+	.overvie_information_sec_active{
+		width: 350px;
+	}
+	.top_nav_overinfo_opened .overviewinfo{
+		right: 350px;
+	}
+	.top_nav .overviewinfo:hover{
+		opacity: 1;
+	}
+	.overvie_information_sec .cont{
+		width: 100%;
+		min-width: 250px;
+	}
+	.overvie_information_sec .cont .insidecont h2 a{
+		top: 2px;
+		font-size: 13px;
+	}
+	.top_nav .rightmenu .dropdownlanguage{
+		display: none;
+	}
+	.top_nav .rightmenu .dropdownprofile .dropdown-toggle .placeforavatar{
+		display: none;
+	}
+	.top_nav .rightmenu .dropdownprofile .dropdown-toggle{
+		padding-left: 5px;
+	}
+	.top_nav .rightmenu li{
+		margin-left: 5px;
+	}
+	.top_nav .rightmenu .dropdown .dropdown-menu{
+		transform: unset !important;
+		top: 50px !important;
+	}
+
+
+
+
+	.login_page .rightside .contplace form input{
+		font-size: 14px;
+		padding-top: 16px;
+	}
+	.login_page .left_side{
+		width: 100%;
+		height: 148px;
+	}
+	.login_page .rightside{
+		width: 100%;
+		position: relative;
+		height: auto;
+	}
+	.login_page .left_side .contplace img{
+		width: 205px;
+	}
+	.login_page .left_side .contplace h2{
+		padding: 0;
+		min-height: auto;
+		padding-bottom: 20px;
+	}
+	.login_page .rightside .contplace{
+		max-width: 300px;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 30px;
+		padding-top: 25px;
+		position: relative;
+		    top: unset;
+		    transform: unset;
+		min-height: calc(100vh - 148px);
+		height: auto;
+	}
+	.login_page .rightside .contplace form .forgot_pass{
+		text-align: left;
+		margin-top: 30px;
+	}
+}
+@media(max-width: 772px){
+	.your_locations .placefortable tbody .bind_db span{
+		display: none;
+	}
+	.your_locations .placefortable tbody tr td:last-child:after{
+		display: none;
+	}
+}
+@media(max-width: 650px){
+	.your_locations .tablearea .head_elements .right_side{
+		position: relative;
+		margin-bottom: 20px;
+	}
+}
+@media(max-width: 420px){
+	.top_nav_overinfo_opened .overviewinfo{
+		right: calc(100% - 70px);
+	}
+	.overvie_information_sec_active{
+		width: calc(100% - 70px);
+	}
+}
