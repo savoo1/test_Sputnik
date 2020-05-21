@@ -9,8 +9,63 @@
 .top_nav .hambmenu_phone {
   display: none; }
 
+@media (max-width: 1350px) {
+  .dashboard .boxes_row .box h1 {
+    font-size: 13px; }
+  .dashboard .boxes_row .box h3 {
+    font-size: 30px;
+    line-height: 36px; } }
+
+@media (max-width: 1200px) {
+  .dashboard .map_row .councildetails_box_precinct .select_dropdown {
+    top: -27px;
+    left: 0; }
+  .dashboard .map_row .councildetails_box_precinct .custom_select .options {
+    max-height: 203px; }
+  .dashboard .map_row .councildetails_box_precinct {
+    margin-top: 50px; }
+    .dashboard .map_row .councildetails_box_precinct .title_outside {
+      top: -55px !important; }
+  .dashboard .boxes_row {
+    display: block;
+    justify-content: unset; }
+  .dashboard .boxes_row .box {
+    width: calc(50% - 5px);
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px; }
+  .dashboard .boxes_row a:nth-child(2n) .box {
+    margin-right: 0; }
+  .dashboard .boxes_row a:last-child .box {
+    width: 100%;
+    margin: 0; }
+  .dashboard .map_row .councildetails_box .title_outside {
+    top: -25px; }
+  .dashboard .top_row {
+    text-align: left;
+    padding-bottom: 20px; }
+  .dashboard .top_row .data_range {
+    display: block;
+    margin-bottom: 15px; }
+  .dashboard .top_row .search_area {
+    margin-left: 0; }
+  .dashboard .top_row .data_range input, .dashboard .top_row .search_area input, .dashboard .top_row .search_area {
+    max-width: 329px;
+    width: 100%;
+    display: block; }
+  .top_nav .rightmenu_without_overview {
+    padding-right: 30px; }
+  .dashboard {
+    padding-right: 30px; } }
+
 @media (max-width: 991px) {
+  .top_nav .rightmenu_without_overview {
+    padding-right: 15px; }
+  .footer img {
+    right: 10px; }
   .your_locations {
+    padding: 85px 15px 30px 15px; }
+  .dashboard {
     padding: 85px 15px 30px 15px; }
   .your_locations .placefortable tbody td:nth-child(4) .cont {
     margin-left: 5px; }
@@ -122,18 +177,42 @@
   .your_locations .placefortable tbody .bind_db span {
     display: none; }
   .your_locations .placefortable tbody tr td:last-child:after {
-    display: none; } }
+    display: none; }
+  .daterangepicker.ltr {
+    width: 280px; }
+  .dashboard .map_row .councildetails_box {
+    width: 100%;
+    max-width: 100%; }
+  .dashboard .map_row #mapid {
+    height: 266px;
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    right: unset;
+    top: unset;
+    margin-top: 20px; } }
 
 @media (max-width: 650px) {
   .your_locations .tablearea .head_elements .right_side {
     position: relative;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .top_nav .rightmenu .dropdown .dropdown-menu-notification {
+    right: -70px; } }
 
 @media (max-width: 420px) {
   .top_nav_overinfo_opened .overviewinfo {
     right: calc(100% - 70px); }
   .overvie_information_sec_active {
-    width: calc(100% - 70px); } }
+    width: calc(100% - 70px); }
+  .top_nav .rightmenu .dropdown .dropdown-menu-notification {
+    right: -140px !important; }
+  .top_nav .rightmenu_without_overview .dropdown .dropdown-menu-notification {
+    right: -77px !important; } }
+
+@media (max-width: 400px) {
+  .dashboard .boxes_row .box {
+    width: 100%;
+    margin-right: 0; } }
 
 @media (max-height: 600px) {
   .left_menu .menu_cont {
@@ -148,3 +227,8 @@
     padding-bottom: 20px; }
   .left_menu .down_menu .copyright {
     bottom: 22px; } }
+
+@media (max-height: 500px) {
+  .top_nav .rightmenu .dropdown .dropdown-menu-notification {
+    max-height: 220px;
+    overflow: auto; } }
