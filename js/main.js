@@ -183,6 +183,10 @@ $('.custom_select select').each(function () {
 });
 
 
-
+$( ".custom_select .styledSelect" ).click(function() {
+	if($(this).hasClass("active")){
+		$(this).removeClass("active");
+	}
+});
 
 

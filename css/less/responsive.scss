@@ -20,8 +20,43 @@
 		line-height: 36px;
 	}
 }
+@media(max-width: 1400px){
+	.dashboard .dashboard_bin .rightside .boxes_row2 .box{
+	    width: calc(50% - 5px);
+	    display: inline-table;
+	    margin-right: 5px;
+	    margin-bottom: 10px;
+	}
+	.dashboard .dashboard_bin .rightside .boxes_row2{
+		display: block;
+	}
+	.dashboard .dashboard_bin .rightside .boxes_row2 a:nth-child(2n) .box{
+		margin-right: 0;
+	}
+	.dashboard .dashboard_bin{
+		margin-top: 50px;
+	}
+}
+@media(max-width: 1270px){
+	.dashboard .top_row .data_range{
+		display: block;
+		margin-bottom: 15px;
+	}
+	.dashboard .top_row .search_area{
+		margin-left: 0;
+	}
+	.dashboard .top_row .data_range input,.dashboard .top_row .search_area input,.dashboard .top_row .search_area{
+		max-width: 329px;
+		width: 100%;
+		display: block;
+	}
+	.dashboard .top_row{
+		padding-top: 50px;
+	}
+}
 @media(max-width: 1200px){
-	.dashboard .map_row .councildetails_box_precinct .select_dropdown{
+	
+	.dashboard .map_row .councildetails_box_precinct .select_dropdown2{
 		top: -27px;
 		left: 0;
 	}
@@ -29,7 +64,7 @@
 		max-height: 203px;
 	}
 	.dashboard .map_row .councildetails_box_precinct{
-		margin-top: 50px;
+		margin-top: 30px;
 		.title_outside {
 		    top: -55px !important;
 		}
@@ -76,6 +111,9 @@
 	.dashboard{
 		padding-right: 30px;
 	}
+	.user_managment,.user_managment_profile{
+		padding-right: 30px;
+	}
 }
 
 @media(max-width: 991px){
@@ -83,14 +121,15 @@
 		padding-right: 15px;
 	}
 
+
 	.footer img{
 		right: 10px;
 	}
 	.your_locations {
-	    padding: 85px 15px 30px 15px;
+	    padding: 85px 15px 50px 15px;
 	}
-	.dashboard{
-		padding: 85px 15px 30px 15px;
+	.dashboard, .user_managment,.user_managment_profile{
+		padding: 85px 15px 50px 15px;
 	}
 	.your_locations .placefortable tbody td:nth-child(4) .cont{
 		margin-left: 5px;
@@ -238,6 +277,16 @@
 	}
 }
 @media(max-width: 772px){
+	.user_managment_profile .mainrow .right_side{
+		width: 100%;
+	}
+	.user_managment_profile .mainrow{
+		display: block;
+		margin-top: 20px;
+	}
+	.user_managment_profile .mainrow .left_side{
+		margin-bottom: 30px;
+	}
 	.your_locations .placefortable tbody .bind_db span{
 		display: none;
 	}
@@ -260,6 +309,46 @@
 	    top: unset;
 	    margin-top: 20px;
 	}
+	.dashboard .dashboard_bin{
+		display: block;
+	}
+	.dashboard .dashboard_bin .rightside{
+		width: 100%;
+	}
+	.dashboard .dashboard_bin .leftside{
+		width: 100%;
+	}
+	.dashboard .dashboard_bin .leftside .bin_icon_place{
+		max-width: 300px;
+		border: 0;
+	}
+	.dashboard .dashboard_bin .leftside .descs{
+		border-top: 1px solid #9E9E9E;
+	}
+}
+@media(max-width: 670px){
+	.updatebindetails .cont_iside .placeforinput p{
+		position: relative;
+		    display: block;
+		    left: unset;
+		    right: unset;
+		    text-align: left;
+		    margin-bottom: 5px;
+		    transform: unset;
+	}
+	.updatebindetails .cont_iside{
+		width: 100%;
+		margin: 0;
+	}
+	.updatebindetails .cont_iside .placeforinput .leftside{
+		width: 100%;
+	}
+	.updatebindetails .cont_iside .placeforinput .setbinlocation{
+		position: relative;
+	}
+	.updatebindetails .modal-footer .deletebin{
+		left: 15px;
+	}
 }
 @media(max-width: 650px){
 	.your_locations .tablearea .head_elements .right_side{
@@ -270,6 +359,24 @@
 		right: -70px;
 	}
 }
+@media(max-width: 578px){
+	.updatebindetails .cont_iside .placeforinput .leftside .col-sm-6:last-child {
+	    padding-left: 15px;
+	    input{
+	    	margin-top: 15px;
+	    }
+	}
+	.updatebindetails .cont_iside .placeforinput .leftside .col-sm-6:first-child {
+	    padding-right: 15px;
+	}
+	.user_managment .main_title a{
+		position: relative;
+	    top: unset;
+	    transform: unset;
+	    margin-top: 10px;
+	}
+}
+
 @media(max-width: 420px){
 	.top_nav_overinfo_opened .overviewinfo{
 		right: calc(100% - 70px);
@@ -285,15 +392,41 @@
 			right: -77px !important;
 		}
 	}
-}
-@media(max-width: 400px){
-	.dashboard .boxes_row .box{
+	.dashboard .dashboard_bin .rightside .boxes_row2 .box{
 		width: 100%;
 		margin-right: 0;
 	}
 }
 
+@media(max-width: 400px){
+	.dashboard .boxes_row .box{
+		width: 100%;
+		margin-right: 0;
+	}
+	.user_managment_profile .mainrow .right_side .settings_cont .placefortable .table thead th:first-child{
+		font-size: 16px;
+	}
+}
+@media(max-width: 370px){
+	.updatebindetails .modal-footer{
+		display: block;
+	}
+	.updatebindetails .modal-footer button:nth-child(2){
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+	.updatebindetails .modal-footer .cancle{
+		padding-right: 0;
+	}
+}
+
+
+
 @media(max-height: 600px){
+	.createnewuser .modal-body{
+		max-height: unset;
+	}
 	.left_menu{
 		
 
