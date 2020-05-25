@@ -190,3 +190,29 @@ $( ".custom_select .styledSelect" ).click(function() {
 });
 
 
+
+
+
+
+
+
+
+
+// loader
+var cooldown = 200;
+ for(let i = 0; i < $(".accordeon").children().length; i++){ 
+    setTimeout(function(){
+      $(`.accordeon>.slice:eq(${i})`).css("animation", "SliceHeight .3s  infinite linear");
+    }, cooldown*i);
+  }
+/* jQuery connected */
+
+
+
+
+$(window).on('load', function() {
+    $(".preloader").addClass("preloader_disable");
+});
+
+
+

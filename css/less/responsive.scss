@@ -125,16 +125,16 @@
 	.footer img{
 		right: 10px;
 	}
-	.your_locations {
+	.df_tablepage {
 	    padding: 85px 15px 50px 15px;
 	}
 	.dashboard, .user_managment,.user_managment_profile{
 		padding: 85px 15px 50px 15px;
 	}
-	.your_locations .placefortable tbody td:nth-child(4) .cont{
+	.df_tablepage .placefortable tbody td:nth-child(4) .cont{
 		margin-left: 5px;
 	}
-	.your_locations .placefortable tbody td:nth-child(4){
+	.df_tablepage .placefortable tbody td:nth-child(4){
 		min-width: 55px;
 	}
 	.left_menu .logoplace{
@@ -277,6 +277,30 @@
 	}
 }
 @media(max-width: 772px){
+	.user_managment_profile .mainrow .left_side .cont ul {
+		display: flex;
+		 justify-content: space-between;
+
+		li{
+			border: 0;
+			a{
+				min-height: 40px;
+				padding-right: 0;
+			}
+			.onmobile{
+				display: none;
+			}
+		}
+	}
+	.user_managment_profile .positionofpage{
+		display: none;
+	}
+	.user_managment_profile .mainrow .left_side .cont{
+		max-width: 100%;
+	}
+	.user_managment_profile .mainrow .left_side{
+		width: 100%;
+	}
 	.user_managment_profile .mainrow .right_side{
 		width: 100%;
 	}
@@ -287,10 +311,10 @@
 	.user_managment_profile .mainrow .left_side{
 		margin-bottom: 30px;
 	}
-	.your_locations .placefortable tbody .bind_db span{
+	.df_tablepage .placefortable tbody .bind_db span{
 		display: none;
 	}
-	.your_locations .placefortable tbody tr td:last-child:after{
+	.df_tablepage .placefortable tbody tr td:last-child:after{
 		display: none;
 	}
 	.daterangepicker.ltr{
@@ -351,7 +375,7 @@
 	}
 }
 @media(max-width: 650px){
-	.your_locations .tablearea .head_elements .right_side{
+	.df_tablepage .tablearea .head_elements .right_side{
 		position: relative;
 		margin-bottom: 20px;
 	}
@@ -369,11 +393,30 @@
 	.updatebindetails .cont_iside .placeforinput .leftside .col-sm-6:first-child {
 	    padding-right: 15px;
 	}
-	.user_managment .main_title a{
+	.df_tablepage h1 a, .user_managment .main_title a{
 		position: relative;
 	    top: unset;
 	    transform: unset;
 	    margin-top: 10px;
+	}
+	.df_tablepage .last_line_row p{
+		display: none;
+	}
+	.addnewelement form .uploadfilearea .filehere .textofit h3,.addnewelement form .uploadfilearea .filehere .textofit_done h3{
+		margin-top: 10px;
+	}
+	.addnewelement form .uploadfilearea p{
+		margin-right: 10px;
+	}
+	.addnewelement form .uploadfilearea .filehere{
+		min-height: 120px;
+	}
+	.addnewelement form .uploadfilearea h2{
+		font-size: 13px;
+		margin-top: 5px;
+	}
+	.addnewelement form .uploadfilearea .filehere #progress{
+		max-width: 200px;
 	}
 }
 
@@ -424,7 +467,11 @@
 
 
 @media(max-height: 600px){
+	
 	.createnewuser .modal-body{
+		max-height: unset;
+	}
+	.addcouncil .modal-body{
 		max-height: unset;
 	}
 	.left_menu{
