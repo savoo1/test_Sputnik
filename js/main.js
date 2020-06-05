@@ -12,6 +12,12 @@ $( ".top_nav .overviewinfo" ).click(function(e) {
 	}
 });
 
+$( ".dashboard .boxes_row .box" ).click(function(e) {
+    e.preventDefault();
+    $(this).parent().find(".activebox").removeClass("activebox");
+    $(this).addClass("activebox");
+});
+
 
 
 $( ".left_menu .logoplace" ).click(function(e) {
@@ -92,10 +98,20 @@ $( document ).ready(function() {
 
 
 jQuery(document).ready(function($) {
-    $(".clickable-row").click(function() {
-        window.location = $(this).data("href");
+    $(".clickable-row").click(function(event) {
+        var cc = event.target.className;
+        if (cc.indexOf("fordelpop") >= 0){
+            // alert("2");
+        }else{
+            if(cc != "SPAN"){
+                window.location = $(this).data("href");
+            }    
+        }
     });
 });
+
+
+
 
 
 $( ".your_locations .placefortable tbody .bind_db" ).hover(

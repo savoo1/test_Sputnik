@@ -19,6 +19,10 @@
 		font-size: 30px;
 		line-height: 36px;
 	}
+	.dashboard .chart_area .options_row{
+			min-width: calc(100% + 43px);
+		
+	}
 }
 @media(max-width: 1400px){
 	.dashboard .dashboard_bin .rightside .boxes_row2 .box{
@@ -26,6 +30,11 @@
 	    display: inline-table;
 	    margin-right: 5px;
 	    margin-bottom: 10px;
+	}
+	.dashboard .map_row #mapid{
+		width: 100%;
+		margin-top: 10px;
+		position: relative;
 	}
 	.dashboard .dashboard_bin .rightside .boxes_row2{
 		display: block;
@@ -35,6 +44,23 @@
 	}
 	.dashboard .dashboard_bin{
 		margin-top: 50px;
+	}
+	.dashboard .boxes_row_scroll{
+		overflow: auto;
+		.boxes_row{
+			min-width: 960px;
+		}
+	}
+	.dashboard .map_row .councildetails_box{
+		width: calc(50% - 5px);
+		max-width: 100%;
+	}
+	.dashboard .map_row .totalprecincts_box{
+		max-width: unset;
+		position: absolute;
+		left: unset;
+		width: calc(50% - 5px);
+		right: 0;
 	}
 }
 @media(max-width: 1270px){
@@ -52,6 +78,10 @@
 	}
 	.dashboard .top_row{
 		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+	.dashboard .map_row .councildetails_box_precinct .select_dropdown2{
+		top: -27px;
 	}
 }
 @media(max-width: 1200px){
@@ -64,28 +94,28 @@
 		max-height: 203px;
 	}
 	.dashboard .map_row .councildetails_box_precinct{
-		margin-top: 30px;
+		// margin-top: 30px;
 		.title_outside {
 		    top: -55px !important;
 		}
 	}
-	.dashboard .boxes_row{
-		display: block;
-		justify-content: unset;
-	}
-	.dashboard .boxes_row .box{
-		width: calc(50% - 5px);
-	    display: inline-block;
-	    margin-right: 5px;
-	    margin-bottom: 10px;
-	}
-	.dashboard .boxes_row a:nth-child(2n) .box{
-		margin-right: 0;
-	}
-	.dashboard .boxes_row a:last-child .box{
-		width: 100%;
-		margin: 0;
-	}
+	// .dashboard .boxes_row{
+	// 	display: block;
+	// 	justify-content: unset;
+	// }
+	// .dashboard .boxes_row .box{
+	// 	width: calc(50% - 5px);
+	//     display: inline-block;
+	//     margin-right: 5px;
+	//     margin-bottom: 10px;
+	// }
+	// .dashboard .boxes_row .box:nth-child(2n){
+	// 	margin-right: 0;
+	// }
+	// .dashboard .boxes_row .box:last-child{
+	// 	width: 100%;
+	// 	margin: 0;
+	// }
 	.dashboard .map_row .councildetails_box .title_outside{
 		top: -25px;
 	}
@@ -114,9 +144,14 @@
 	.user_managment,.user_managment_profile{
 		padding-right: 30px;
 	}
+	.dashboard .chart_area .options_row{
+			min-width: 911px;
+		
+	}
 }
 
 @media(max-width: 991px){
+
 	.top_nav .rightmenu_without_overview{
 		padding-right: 15px;
 	}
@@ -277,6 +312,11 @@
 	}
 }
 @media(max-width: 772px){
+	.dashboard .map_row .totalprecincts_box{
+		width: 100%;
+		position: relative;
+		margin-top: 10px;
+	}
 	.user_managment_profile .mainrow .left_side .cont ul {
 		display: flex;
 		 justify-content: space-between;
@@ -331,7 +371,7 @@
 	    position: relative;
 	    right: unset;
 	    top: unset;
-	    margin-top: 20px;
+	    margin-top: 10px;
 	}
 	.dashboard .dashboard_bin{
 		display: block;
@@ -444,7 +484,7 @@
 @media(max-width: 400px){
 	.dashboard .boxes_row .box{
 		width: 100%;
-		margin-right: 0;
+		margin-right: 15px;
 	}
 	.user_managment_profile .mainrow .right_side .settings_cont .placefortable .table thead th:first-child{
 		font-size: 16px;
