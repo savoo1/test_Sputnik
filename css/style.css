@@ -747,7 +747,7 @@ a:hover {
     display: block;
     visibility: visible;
     opacity: 1;
-    max-height: 160px;
+    max-height: 260px;
     padding-bottom: 5px; }
     .left_menu_active .main_menu .activeitem .dropdown_c .cont_items {
       opacity: 1;
@@ -830,6 +830,9 @@ a:hover {
       margin-bottom: 15px; }
       .login_page .rightside .contplace h1 span {
         color: #43B02A; }
+    .login_page .rightside .contplace p {
+      font-size: 15px;
+      font-family: 'Montserrat', sans-serif; }
     .login_page .rightside .contplace form {
       padding-left: 3px;
       position: relative; }
@@ -883,7 +886,7 @@ a:hover {
         color: #fff;
         font-weight: 700;
         font-size: 18px;
-        padding: 12px 40px 14px;
+        padding: 12px 5px 14px;
         margin-top: 26px;
         -webkit-transition: all .25s ease;
         -moz-transition: all .25s ease;
@@ -923,18 +926,18 @@ a:hover {
   width: calc(100% - 96px);
   margin-left: 96px; }
 
-#mapid, #mapid2 {
+#mapid, #mapid2, #mapid3 {
   width: 100%;
   height: calc(100vh - 50px);
   z-index: 0;
   position: relative; }
-  #mapid .leaflet-top, #mapid2 .leaflet-top {
+  #mapid .leaflet-top, #mapid2 .leaflet-top, #mapid3 .leaflet-top {
     top: 70px; }
-  #mapid .leaflet-left, #mapid2 .leaflet-left {
+  #mapid .leaflet-left, #mapid2 .leaflet-left, #mapid3 .leaflet-left {
     left: 5px; }
-  #mapid .leaflet-tooltip-pane, #mapid2 .leaflet-tooltip-pane {
+  #mapid .leaflet-tooltip-pane, #mapid2 .leaflet-tooltip-pane, #mapid3 .leaflet-tooltip-pane {
     z-index: 550; }
-  #mapid .myCSSClass, #mapid2 .myCSSClass {
+  #mapid .myCSSClass, #mapid2 .myCSSClass, #mapid3 .myCSSClass {
     background: transparent;
     color: #fff;
     border: 0;
@@ -947,7 +950,7 @@ a:hover {
     max-width: 95px;
     width: 95px;
     padding-right: 17px; }
-    #mapid .myCSSClass span, #mapid2 .myCSSClass span {
+    #mapid .myCSSClass span, #mapid2 .myCSSClass span, #mapid3 .myCSSClass span {
       background: #1F5837;
       font-family: 'Montserrat', sans-serif;
       font-size: 11px;
@@ -961,7 +964,7 @@ a:hover {
   100% {
     max-width: 95px;
     opacity: 1; } }
-  #mapid .leaflet-tooltip-left.myCSSClass::before, #mapid2 .leaflet-tooltip-left.myCSSClass::before {
+  #mapid .leaflet-tooltip-left.myCSSClass::before, #mapid2 .leaflet-tooltip-left.myCSSClass::before, #mapid3 .leaflet-tooltip-left.myCSSClass::before {
     display: block;
     right: 0;
     margin-right: -6px;
@@ -970,7 +973,7 @@ a:hover {
     position: absolute;
     border-right: 0;
     border-left-color: #1F5837; }
-  #mapid .leaflet-tooltip-right.myCSSClass::before, #mapid2 .leaflet-tooltip-right.myCSSClass::before {
+  #mapid .leaflet-tooltip-right.myCSSClass::before, #mapid2 .leaflet-tooltip-right.myCSSClass::before, #mapid3 .leaflet-tooltip-right.myCSSClass::before {
     display: block;
     left: unset;
     margin-left: 0;
@@ -978,19 +981,19 @@ a:hover {
     margin-right: 0;
     border-right-color: #1F5837;
     transform: rotate(180deg); }
-  #mapid .leaflet-popup-tip, #mapid2 .leaflet-popup-tip {
+  #mapid .leaflet-popup-tip, #mapid2 .leaflet-popup-tip, #mapid3 .leaflet-popup-tip {
     background: #53565A; }
-  #mapid .leaflet-popup-content-wrapper, #mapid2 .leaflet-popup-content-wrapper {
+  #mapid .leaflet-popup-content-wrapper, #mapid2 .leaflet-popup-content-wrapper, #mapid3 .leaflet-popup-content-wrapper {
     border-radius: 5px;
     background: #53565A;
     width: 320px; }
-    #mapid .leaflet-popup-content-wrapper img, #mapid2 .leaflet-popup-content-wrapper img {
+    #mapid .leaflet-popup-content-wrapper img, #mapid2 .leaflet-popup-content-wrapper img, #mapid3 .leaflet-popup-content-wrapper img {
       display: block;
       margin: auto; }
-    #mapid .leaflet-popup-content-wrapper .description, #mapid2 .leaflet-popup-content-wrapper .description {
+    #mapid .leaflet-popup-content-wrapper .description, #mapid2 .leaflet-popup-content-wrapper .description, #mapid3 .leaflet-popup-content-wrapper .description {
       opacity: 0;
       animation: 0.5s 0.03s animation forwards; }
-      #mapid .leaflet-popup-content-wrapper .description h1, #mapid2 .leaflet-popup-content-wrapper .description h1 {
+      #mapid .leaflet-popup-content-wrapper .description h1, #mapid2 .leaflet-popup-content-wrapper .description h1, #mapid3 .leaflet-popup-content-wrapper .description h1 {
         margin: 0;
         padding: 0;
         color: #fff;
@@ -1000,7 +1003,7 @@ a:hover {
         margin-right: 13px;
         padding-top: 10px;
         padding-bottom: 10px; }
-      #mapid .leaflet-popup-content-wrapper .description p, #mapid2 .leaflet-popup-content-wrapper .description p {
+      #mapid .leaflet-popup-content-wrapper .description p, #mapid2 .leaflet-popup-content-wrapper .description p, #mapid3 .leaflet-popup-content-wrapper .description p {
         margin: 0;
         padding: 0;
         color: #fff;
@@ -1013,10 +1016,10 @@ a:hover {
     opacity: 0; }
   100% {
     opacity: 1; } }
-    #mapid .leaflet-popup-content-wrapper .description2, #mapid2 .leaflet-popup-content-wrapper .description2 {
+    #mapid .leaflet-popup-content-wrapper .description2, #mapid2 .leaflet-popup-content-wrapper .description2, #mapid3 .leaflet-popup-content-wrapper .description2 {
       opacity: 0;
       animation: 1s 2.1s animationdd forwards; }
-      #mapid .leaflet-popup-content-wrapper .description2 h3, #mapid2 .leaflet-popup-content-wrapper .description2 h3 {
+      #mapid .leaflet-popup-content-wrapper .description2 h3, #mapid2 .leaflet-popup-content-wrapper .description2 h3, #mapid3 .leaflet-popup-content-wrapper .description2 h3 {
         margin: 0;
         padding: 0;
         color: #fff;
@@ -1031,12 +1034,12 @@ a:hover {
     opacity: 0; }
   100% {
     opacity: 1; } }
-    #mapid .leaflet-popup-content-wrapper .firstrow, #mapid2 .leaflet-popup-content-wrapper .firstrow {
+    #mapid .leaflet-popup-content-wrapper .firstrow, #mapid2 .leaflet-popup-content-wrapper .firstrow, #mapid3 .leaflet-popup-content-wrapper .firstrow {
       padding-top: 10px;
       padding-bottom: 10px; }
-      #mapid .leaflet-popup-content-wrapper .firstrow .col-4, #mapid2 .leaflet-popup-content-wrapper .firstrow .col-4 {
+      #mapid .leaflet-popup-content-wrapper .firstrow .col-4, #mapid2 .leaflet-popup-content-wrapper .firstrow .col-4, #mapid3 .leaflet-popup-content-wrapper .firstrow .col-4 {
         opacity: 0; }
-      #mapid .leaflet-popup-content-wrapper .firstrow .col-4:first-child, #mapid2 .leaflet-popup-content-wrapper .firstrow .col-4:first-child {
+      #mapid .leaflet-popup-content-wrapper .firstrow .col-4:first-child, #mapid2 .leaflet-popup-content-wrapper .firstrow .col-4:first-child, #mapid3 .leaflet-popup-content-wrapper .firstrow .col-4:first-child {
         animation: 0.5s 1s animation_iconf forwards; }
 
 @keyframes animation_iconf {
@@ -1044,7 +1047,7 @@ a:hover {
     opacity: 0; }
   100% {
     opacity: 1; } }
-      #mapid .leaflet-popup-content-wrapper .firstrow .col-4:nth-child(2), #mapid2 .leaflet-popup-content-wrapper .firstrow .col-4:nth-child(2) {
+      #mapid .leaflet-popup-content-wrapper .firstrow .col-4:nth-child(2), #mapid2 .leaflet-popup-content-wrapper .firstrow .col-4:nth-child(2), #mapid3 .leaflet-popup-content-wrapper .firstrow .col-4:nth-child(2) {
         animation: 0.5s 1.5s animation_icons forwards; }
 
 @keyframes animation_icons {
@@ -1052,7 +1055,7 @@ a:hover {
     opacity: 0; }
   100% {
     opacity: 1; } }
-      #mapid .leaflet-popup-content-wrapper .firstrow .col-4:nth-child(3), #mapid2 .leaflet-popup-content-wrapper .firstrow .col-4:nth-child(3) {
+      #mapid .leaflet-popup-content-wrapper .firstrow .col-4:nth-child(3), #mapid2 .leaflet-popup-content-wrapper .firstrow .col-4:nth-child(3), #mapid3 .leaflet-popup-content-wrapper .firstrow .col-4:nth-child(3) {
         animation: 0.5s 1.8s animation_icont forwards; }
 
 @keyframes animation_icont {
@@ -1060,7 +1063,7 @@ a:hover {
     opacity: 0; }
   100% {
     opacity: 1; } }
-      #mapid .leaflet-popup-content-wrapper .firstrow p, #mapid2 .leaflet-popup-content-wrapper .firstrow p {
+      #mapid .leaflet-popup-content-wrapper .firstrow p, #mapid2 .leaflet-popup-content-wrapper .firstrow p, #mapid3 .leaflet-popup-content-wrapper .firstrow p {
         margin: 0;
         padding: 0;
         color: #fff;
@@ -1069,18 +1072,18 @@ a:hover {
         font-size: 18px;
         text-align: center;
         margin-top: 7px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow p span, #mapid2 .leaflet-popup-content-wrapper .firstrow p span {
+        #mapid .leaflet-popup-content-wrapper .firstrow p span, #mapid2 .leaflet-popup-content-wrapper .firstrow p span, #mapid3 .leaflet-popup-content-wrapper .firstrow p span {
           margin-top: -1px;
           position: absolute;
           font-size: 14px;
           margin-left: 2px; }
-      #mapid .leaflet-popup-content-wrapper .firstrow .witho, #mapid2 .leaflet-popup-content-wrapper .firstrow .witho {
+      #mapid .leaflet-popup-content-wrapper .firstrow .witho, #mapid2 .leaflet-popup-content-wrapper .firstrow .witho, #mapid3 .leaflet-popup-content-wrapper .firstrow .witho {
         padding-right: 8px; }
-      #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg {
+      #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg {
         height: 45px;
         position: relative;
         display: block; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg img, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg img {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg img, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg img, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg img {
           top: 50%;
           transform: translateY(-50%);
           left: 0;
@@ -1089,9 +1092,9 @@ a:hover {
           margin: auto;
           z-index: 9;
           position: absolute; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .binicon2, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .binicon2 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .binicon2, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .binicon2, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .binicon2 {
           padding-top: 8px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .bintop, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .bintop {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .bintop, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .bintop, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .bintop {
           margin-top: -19px;
           padding-right: 1px;
           transform: rotate(20deg);
@@ -1106,7 +1109,7 @@ a:hover {
     margin-top: -21px;
     padding-right: 3px;
     transform: rotate(0deg); } }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .line_bin, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .line_bin {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .line_bin, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .line_bin, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .line_bin {
           width: 16px;
           height: 24px;
           margin: auto;
@@ -1117,7 +1120,7 @@ a:hover {
           z-index: 0;
           animation: 1s 2.2s bin_animation forwards;
           max-height: 0; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .line_temp, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .line_temp {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .line_temp, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .line_temp, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .line_temp {
           width: 16px;
           height: 35px;
           margin: auto;
@@ -1134,49 +1137,49 @@ a:hover {
     max-height: 0; }
   100% {
     max-height: 100%; } }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .green_color, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .green_color {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .green_color, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .green_color, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .green_color {
           background: #43B02A; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .red_color, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .red_color {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .red_color, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .red_color, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .red_color {
           background: #C62828; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .orange_color, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .orange_color {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .orange_color, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .orange_color, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .orange_color {
           background: #F57F17; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height90, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height90 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height90, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height90, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height90 {
           height: 21.5px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height80, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height80 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height80, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height80, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height80 {
           height: 19px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height70, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height70 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height70, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height70, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height70 {
           height: 16.5px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height60, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height60 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height60, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height60, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height60 {
           height: 14px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height50, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height50 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height50, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height50, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height50 {
           height: 11.5px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height40, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height40 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height40, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height40, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height40 {
           height: 9px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height30, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height30 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height30, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height30, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height30 {
           height: 6.5px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height20, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height20 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height20, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height20, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height20 {
           height: 4px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height10, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height10 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height10, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height10, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height10 {
           height: 2px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp90, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp90 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp90, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp90, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp90 {
           height: 31.5px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp80, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp80 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp80, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp80, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp80 {
           height: 28px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp70, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp70 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp70, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp70, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp70 {
           height: 24.5px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp60, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp60 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp60, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp60, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp60 {
           height: 21px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp50, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp50 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp50, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp50, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp50 {
           height: 17.5px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp40, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp40 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp40, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp40, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp40 {
           height: 14px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp30, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp30 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp30, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp30, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp30 {
           height: 10.5px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp20, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp20 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp20, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp20, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp20 {
           height: 7px; }
-        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp10, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp10 {
+        #mapid .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp10, #mapid2 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp10, #mapid3 .leaflet-popup-content-wrapper .firstrow .placeforimg .height_temp10 {
           height: 3.5px; }
-    #mapid .leaflet-popup-content-wrapper .linedown, #mapid2 .leaflet-popup-content-wrapper .linedown {
+    #mapid .leaflet-popup-content-wrapper .linedown, #mapid2 .leaflet-popup-content-wrapper .linedown, #mapid3 .leaflet-popup-content-wrapper .linedown {
       width: 100%;
       height: 1px;
       background: #9E9E9E;
@@ -1189,11 +1192,12 @@ a:hover {
     max-width: 0; }
   100% {
     max-width: 100%; } }
-  #mapid .leaflet-popup-close-button, #mapid2 .leaflet-popup-close-button {
+  #mapid .leaflet-popup-close-button, #mapid2 .leaflet-popup-close-button, #mapid3 .leaflet-popup-close-button {
     display: none; }
 
 .df_tablepage {
-  padding: 85px 71px 30px 30px; }
+  padding: 85px 71px 30px 30px;
+  min-height: calc(100vh - 50px); }
   .df_tablepage .location {
     margin: 0;
     padding: 0;
@@ -1399,7 +1403,7 @@ a:hover {
       font-size: 12px;
       line-height: 20px;
       font-weight: 400;
-      color: #01579B; }
+      color: #000; }
     .df_tablepage .placefortable thead td:first-child {
       padding-left: 15px;
       min-width: 270px; }
@@ -1473,6 +1477,20 @@ a:hover {
       -ms-transition: all .25s ease;
       -o-transition: all .25s ease;
       transition: all .25s ease; }
+    .df_tablepage .placefortable tbody .add_remove td:last-child:after {
+      display: none; }
+    .df_tablepage .placefortable tbody .add_remove td .addremovelink {
+      position: absolute;
+      left: -180px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #136F63;
+      top: 50%;
+      transform: translateY(-50%); }
+    .df_tablepage .placefortable tbody .add_remove td .addremovelink:hover {
+      opacity: 0.7; }
     .df_tablepage .placefortable tbody tr:hover {
       background: #E9F0F5; }
       .df_tablepage .placefortable tbody tr:hover td:last-child:after {
@@ -1539,7 +1557,7 @@ a:hover {
       font-size: 12px;
       line-height: 20px;
       font-weight: 400;
-      color: #01579B;
+      color: #000;
       white-space: nowrap; }
     .df_tablepage .placefortable2 thead td:first-child {
       padding-left: 15px;
@@ -1627,7 +1645,7 @@ a:hover {
 
 .daterangepicker .prev {
   position: absolute;
-  left: 14px;
+  left: 190px;
   margin-top: 2px; }
 
 .daterangepicker .next:after {
@@ -1647,6 +1665,32 @@ a:hover {
 
 .daterangepicker.dropdown-menu {
   z-index: 10 !important; }
+
+.daterangepicker.ltr {
+  min-width: 670px;
+  padding-left: 185px;
+  padding-bottom: 60px;
+  min-height: 330px; }
+
+.ranges li {
+  color: #136F63 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  margin-bottom: 10px !important; }
+
+.ranges li.active {
+  background-color: #136F63 !important;
+  border: 1px solid #136F63 !important;
+  color: #fff !important; }
+
+.ranges li:hover {
+  background-color: #136F63 !important;
+  border: 1px solid #136F63 !important;
+  color: #fff !important; }
+
+.daterangepicker.ltr .ranges {
+  position: absolute;
+  left: 10px;
+  top: 6px; }
 
 .daterangepicker.ltr .ranges {
   float: unset !important;
@@ -1685,6 +1729,9 @@ a:hover {
   line-height: 16px;
   padding-left: 10px !important; }
 
+.daterangepicker .calendar {
+  display: block !important; }
+
 .dashboard {
   padding: 85px 80px 30px 30px;
   min-height: 780px; }
@@ -1717,7 +1764,7 @@ a:hover {
         text-decoration: none;
         opacity: 0.7; }
     .dashboard .top_row .data_range {
-      max-width: 329px;
+      max-width: 355px;
       display: inline-block;
       text-align: left;
       position: relative; }
@@ -1736,7 +1783,7 @@ a:hover {
         margin-bottom: 7px; }
       .dashboard .top_row .data_range input {
         width: 100%;
-        width: 329px;
+        width: 355px;
         display: block;
         padding: 10px 20px 10px 10px;
         border-radius: 8px;
@@ -2348,6 +2395,232 @@ a:hover {
         color: #fff; }
   .dashboard .boxes_row_4boxes .box {
     width: calc(100% / 4 - 9px); }
+  .dashboard .dashboard_totalr_row {
+    min-height: 441px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative; }
+    .dashboard .dashboard_totalr_row .leftside {
+      position: relative;
+      width: calc(100% - 582px);
+      height: 441px;
+      background: yellow;
+      background: #fff;
+      border-radius: 8px; }
+      .dashboard .dashboard_totalr_row .leftside .cont_pl {
+        min-width: 100%; }
+    .dashboard .dashboard_totalr_row .chart_area .options_row {
+      padding-right: 100px;
+      min-width: 100%; }
+    .dashboard .dashboard_totalr_row .rightside {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 567px;
+      height: 441px;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .dashboard .dashboard_totalr_row .rightside .col-md-6 {
+        padding: 0; }
+      .dashboard .dashboard_totalr_row .rightside .col-6:first-child {
+        padding-left: 5px;
+        padding-right: 5px; }
+      .dashboard .dashboard_totalr_row .rightside .col-6:last-child {
+        padding-left: 5px;
+        padding-right: 5px; }
+      .dashboard .dashboard_totalr_row .rightside .box {
+        height: 441px;
+        overflow: auto;
+        background: #fff;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+        /* Track */
+        /* Handle */
+        /* Handle on hover */ }
+        .dashboard .dashboard_totalr_row .rightside .box .title {
+          border-bottom: 1px solid #9E9E9E;
+          min-height: 45px; }
+          .dashboard .dashboard_totalr_row .rightside .box .title h2 {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            line-height: 19px;
+            font-weight: 600;
+            color: #212121;
+            margin-right: 15px;
+            margin-left: 15px;
+            padding-top: 13px;
+            padding-bottom: 13px; }
+            .dashboard .dashboard_totalr_row .rightside .box .title h2 span {
+              font-weight: 400; }
+        .dashboard .dashboard_totalr_row .rightside .box .bodyarea_forp {
+          height: 395px;
+          overflow: auto; }
+          .dashboard .dashboard_totalr_row .rightside .box .bodyarea_forp p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            line-height: 42px;
+            font-weight: 400;
+            color: #01579B;
+            position: relative;
+            border-bottom: 1px solid #BDBDBD;
+            padding-left: 15px;
+            padding-right: 60px; }
+            .dashboard .dashboard_totalr_row .rightside .box .bodyarea_forp p span {
+              position: absolute;
+              right: 15px;
+              color: #212121; }
+          .dashboard .dashboard_totalr_row .rightside .box .bodyarea_forp p:nth-child(odd) {
+            background: #EEEEEE; }
+        .dashboard .dashboard_totalr_row .rightside .box .bodyarea_forp2 {
+          height: 395px;
+          overflow: auto; }
+          .dashboard .dashboard_totalr_row .rightside .box .bodyarea_forp2 p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            line-height: 42px;
+            font-weight: 400;
+            color: #212121;
+            position: relative;
+            border-bottom: 1px solid #BDBDBD;
+            padding-left: 15px; }
+            .dashboard .dashboard_totalr_row .rightside .box .bodyarea_forp2 p span {
+              margin-right: 5px; }
+          .dashboard .dashboard_totalr_row .rightside .box .bodyarea_forp2 p:nth-child(odd) {
+            background: #EEEEEE; }
+        .dashboard .dashboard_totalr_row .rightside .box ::-webkit-scrollbar {
+          width: 3px; }
+        .dashboard .dashboard_totalr_row .rightside .box ::-webkit-scrollbar-track {
+          background: #fff; }
+        .dashboard .dashboard_totalr_row .rightside .box ::-webkit-scrollbar-thumb {
+          background: #888; }
+        .dashboard .dashboard_totalr_row .rightside .box ::-webkit-scrollbar-thumb:hover {
+          background: #555; }
+  .dashboard .least_collections {
+    min-height: 388px;
+    width: 100%;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2); }
+    .dashboard .least_collections .title {
+      border-bottom: 1px solid #9E9E9E;
+      min-height: 45px; }
+      .dashboard .least_collections .title h1 {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        line-height: 19px;
+        font-weight: 600;
+        color: #212121;
+        margin-right: 15px;
+        margin-left: 15px;
+        padding-top: 13px;
+        padding-bottom: 13px; }
+        .dashboard .least_collections .title h1 span {
+          font-weight: 400; }
+    .dashboard .least_collections .body_part {
+      padding: 10px;
+      position: relative; }
+      .dashboard .least_collections .body_part .leftsidemap {
+        width: calc(100% - 577px);
+        height: 322px;
+        border-radius: 8px;
+        overflow: auto;
+        z-index: 0;
+        position: relative; }
+        .dashboard .least_collections .body_part .leftsidemap #mapid3 {
+          height: 322px;
+          width: 100%;
+          border-radius: 8px; }
+          .dashboard .least_collections .body_part .leftsidemap #mapid3 .leaflet-top {
+            top: 5px; }
+          .dashboard .least_collections .body_part .leftsidemap #mapid3 .leaflet-tooltip-pane {
+            display: none; }
+      .dashboard .least_collections .body_part .rightside {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 567px;
+        height: 322px;
+        padding-left: 10px;
+        padding-right: 10px; }
+        .dashboard .least_collections .body_part .rightside .colforrow {
+          padding-left: 5px;
+          padding-right: 5px; }
+        .dashboard .least_collections .body_part .rightside .btn_foricons {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 15px;
+          line-height: 42px;
+          font-weight: 600;
+          color: #205C40;
+          padding-left: 15px;
+          border: 1px solid #205C40;
+          border-radius: 8px;
+          cursor: pointer; }
+        .dashboard .least_collections .body_part .rightside .activebtn {
+          background: #205C40;
+          color: #fff;
+          -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
+        .dashboard .least_collections .body_part .rightside .tablerow {
+          margin-top: 20px; }
+          .dashboard .least_collections .body_part .rightside .tablerow .fortable_maxh {
+            max-height: 577px;
+            overflow: hidden;
+            position: relative; }
+            .dashboard .least_collections .body_part .rightside .tablerow .fortable_maxh .line {
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 1px;
+              margin: auto;
+              height: 575px;
+              width: 1px;
+              background: #BDBDBD; }
+          .dashboard .least_collections .body_part .rightside .tablerow .viewfullreport {
+            text-align: center;
+            width: 100%;
+            margin-top: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            color: #01579B;
+            display: block; }
+          .dashboard .least_collections .body_part .rightside .tablerow .viewfullreport:hover {
+            opacity: 0.7; }
+          .dashboard .least_collections .body_part .rightside .tablerow p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            line-height: 42px;
+            font-weight: 400;
+            color: #01579B;
+            position: relative;
+            border-top: 1px solid #BDBDBD;
+            padding-left: 10px; }
+            .dashboard .least_collections .body_part .rightside .tablerow p span {
+              position: absolute;
+              right: 10px;
+              color: #212121; }
+          .dashboard .least_collections .body_part .rightside .tablerow p:nth-child(odd) {
+            background: #EEEEEE; }
+          .dashboard .least_collections .body_part .rightside .tablerow p:last-child {
+            border-bottom: 1px solid #BDBDBD; }
   .dashboard .chart_area {
     min-height: 415px;
     background: #fff;
@@ -2386,6 +2659,10 @@ a:hover {
           color: #212121;
           margin-left: 15px;
           margin-top: 13px; }
+          .dashboard .chart_area .options_row .leftarea_otions h2 span {
+            font-weight: 400;
+            font-size: 13px;
+            margin-left: 10px; }
         .dashboard .chart_area .options_row .leftarea_otions .container_checkbox {
           display: inline-block;
           position: relative;
@@ -2649,121 +2926,329 @@ a:hover {
       min-width: 911px;
       position: relative; }
 
-.bins_modal .modal-content {
-  border-radius: 8px; }
-
-.bins_modal .modal-body {
-  padding: 20px 26px; }
-
-.bins_modal h1 {
-  margin: 0;
-  padding: 0;
-  font-family: 'Oswald', sans-serif;
-  font-size: 28px;
-  line-height: 32px;
-  font-weight: 300;
-  color: #205C40;
-  margin-bottom: 20px; }
-
-.bins_modal .modal-footer {
-  text-align: right; }
-  .bins_modal .modal-footer button {
-    display: inline-block;
-    width: 145px;
-    height: 50px;
-    text-align: center;
-    background: #136F63;
-    border-radius: 4px;
-    border: 0;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease; }
-  .bins_modal .modal-footer .cancle {
-    color: #136F63;
-    background: transparent;
-    width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 5px; }
-  .bins_modal .modal-footer button:hover {
-    background: #143B29; }
-  .bins_modal .modal-footer .cancle:hover {
-    background: transparent;
-    color: #143B29; }
-
-.bins_modal .checkboxes {
-  /* Hide the browser's default checkbox */
-  /* Create a custom checkbox */
-  /* On mouse-over, add a grey background color */
-  /* When the checkbox is checked, add a blue background */
-  /* Create the checkmark/indicator (hidden when not checked) */
-  /* Show the checkmark when checked */
-  /* Style the checkmark/indicator */ }
-  .bins_modal .checkboxes .container_checkbox {
-    display: block;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
+.bins_modal {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .bins_modal .modal-content {
+    border-radius: 8px; }
+  .bins_modal .modal-body {
+    padding: 20px 26px;
+    padding-right: 0;
+    padding-bottom: 0; }
+  .bins_modal h1 {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    line-height: 21px;
-    color: #212121;
-    font-weight: 400;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    margin-bottom: 9px;
-    padding-top: 5px;
-    padding-bottom: 5px; }
-  .bins_modal .checkboxes label:last-child {
-    margin-bottom: 0; }
-  .bins_modal .checkboxes .container_checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0; }
-  .bins_modal .checkboxes .checkmark {
-    position: absolute;
-    top: 6px;
-    left: 0;
-    height: 18px;
-    width: 18px;
-    border: 2px solid #53565A;
-    border-radius: 3px;
-    -webkit-transition: all .15s ease;
-    -moz-transition: all .15s ease;
-    -ms-transition: all .15s ease;
-    -o-transition: all .15s ease;
-    transition: all .15s ease; }
-  .bins_modal .checkboxes .container_checkbox:hover input ~ .checkmark {
-    background-color: #53565A; }
-  .bins_modal .checkboxes .container_checkbox input:checked ~ .checkmark {
-    background-color: #53565A; }
-  .bins_modal .checkboxes .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none; }
-  .bins_modal .checkboxes .container_checkbox input:checked ~ .checkmark:after {
-    display: block; }
-  .bins_modal .checkboxes .container_checkbox .checkmark:after {
-    left: 4px;
-    top: 0px;
-    width: 6px;
-    height: 12px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg); }
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #205C40;
+    margin-bottom: 10px; }
+  .bins_modal .selectallbin {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 15px;
+    width: calc(100% + 26px);
+    margin-left: -26px;
+    padding-left: 26px;
+    padding-top: 10px;
+    /* Hide the browser's default checkbox */
+    /* Create a custom checkbox */
+    /* On mouse-over, add a grey background color */
+    /* When the checkbox is checked, add a blue background */
+    /* Create the checkmark/indicator (hidden when not checked) */
+    /* Show the checkmark when checked */
+    /* Style the checkmark/indicator */ }
+    .bins_modal .selectallbin .container_checkbox {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      line-height: 21px;
+      color: #212121;
+      font-weight: 400;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-bottom: 9px;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+    .bins_modal .selectallbin label:last-child {
+      margin-bottom: 0; }
+    .bins_modal .selectallbin .container_checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+    .bins_modal .selectallbin .checkmark {
+      position: absolute;
+      top: 6px;
+      left: 0;
+      height: 18px;
+      width: 18px;
+      border: 2px solid #53565A;
+      border-radius: 3px;
+      -webkit-transition: all .15s ease;
+      -moz-transition: all .15s ease;
+      -ms-transition: all .15s ease;
+      -o-transition: all .15s ease;
+      transition: all .15s ease; }
+    .bins_modal .selectallbin .container_checkbox:hover input ~ .checkmark {
+      background-color: #53565A; }
+    .bins_modal .selectallbin .container_checkbox input:checked ~ .checkmark {
+      background-color: #53565A; }
+    .bins_modal .selectallbin .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .bins_modal .selectallbin .container_checkbox input:checked ~ .checkmark:after {
+      display: block; }
+    .bins_modal .selectallbin .container_checkbox .checkmark:after {
+      left: 4px;
+      top: 0px;
+      width: 6px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .bins_modal .selectallbin .search_area {
+      max-width: 100%;
+      display: inline-block;
+      text-align: left;
+      margin-left: 10px;
+      margin-top: -5px;
+      width: 100%;
+      padding-right: 36px; }
+      .bins_modal .selectallbin .search_area p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        color: #53565A;
+        font-weight: 400;
+        margin-bottom: 7px; }
+      .bins_modal .selectallbin .search_area input {
+        width: 100%;
+        display: block;
+        padding: 10px 30px 10px 10px;
+        border-radius: 8px;
+        border: 1px solid #9E9E9E;
+        background: url("../img/searchicon.svg") white no-repeat calc(100% - 4px)/25px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        color: #143B29;
+        font-weight: 400; }
+      .bins_modal .selectallbin .search_area *::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #578470;
+        opacity: 1;
+        /* Firefox */ }
+      .bins_modal .selectallbin .search_area *:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #578470; }
+      .bins_modal .selectallbin .search_area *::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #578470; }
+  .bins_modal .modal-footer {
+    text-align: right; }
+    .bins_modal .modal-footer button {
+      display: inline-block;
+      width: 145px;
+      height: 50px;
+      text-align: center;
+      background: #136F63;
+      border-radius: 4px;
+      border: 0;
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
+    .bins_modal .modal-footer .cancle {
+      color: #136F63;
+      background: transparent;
+      width: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 5px; }
+    .bins_modal .modal-footer button:hover {
+      background: #143B29; }
+    .bins_modal .modal-footer .cancle:hover {
+      background: transparent;
+      color: #143B29; }
+  .bins_modal ::-webkit-scrollbar {
+    width: 3px; }
+  .bins_modal ::-webkit-scrollbar-track {
+    background: #fff; }
+  .bins_modal ::-webkit-scrollbar-thumb {
+    background: #888; }
+  .bins_modal ::-webkit-scrollbar-thumb:hover {
+    background: #555; }
+  .bins_modal .checkboxes {
+    max-height: 340px;
+    overflow: auto;
+    padding-top: 10px;
+    /* Hide the browser's default checkbox */
+    /* Create a custom checkbox */
+    /* On mouse-over, add a grey background color */
+    /* When the checkbox is checked, add a blue background */
+    /* Create the checkmark/indicator (hidden when not checked) */
+    /* Show the checkmark when checked */
+    /* Style the checkmark/indicator */ }
+    .bins_modal .checkboxes .container_checkbox {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      line-height: 21px;
+      color: #212121;
+      font-weight: 400;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-bottom: 9px;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+    .bins_modal .checkboxes label:last-child {
+      margin-bottom: 0; }
+    .bins_modal .checkboxes .container_checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+    .bins_modal .checkboxes .checkmark {
+      position: absolute;
+      top: 6px;
+      left: 0;
+      height: 18px;
+      width: 18px;
+      border: 2px solid #53565A;
+      border-radius: 3px;
+      -webkit-transition: all .15s ease;
+      -moz-transition: all .15s ease;
+      -ms-transition: all .15s ease;
+      -o-transition: all .15s ease;
+      transition: all .15s ease; }
+    .bins_modal .checkboxes .container_checkbox:hover input ~ .checkmark {
+      background-color: #53565A; }
+    .bins_modal .checkboxes .container_checkbox input:checked ~ .checkmark {
+      background-color: #53565A; }
+    .bins_modal .checkboxes .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .bins_modal .checkboxes .container_checkbox input:checked ~ .checkmark:after {
+      display: block; }
+    .bins_modal .checkboxes .container_checkbox .checkmark:after {
+      left: 4px;
+      top: 0px;
+      width: 6px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+
+.collectionreport {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .collectionreport .modal-content {
+    border-radius: 8px; }
+  .collectionreport .modal-body {
+    padding: 20px 26px;
+    padding-right: 0;
+    padding-bottom: 0; }
+  .collectionreport h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #205C40;
+    margin-bottom: 10px; }
+  .collectionreport .modal-footer {
+    text-align: right;
+    border-top: 1px solid #9E9E9E; }
+    .collectionreport .modal-footer button {
+      display: inline-block;
+      width: 145px;
+      height: 50px;
+      text-align: center;
+      background: #136F63;
+      border-radius: 4px;
+      border: 0;
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
+    .collectionreport .modal-footer .cancle {
+      color: #136F63;
+      background: transparent;
+      width: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 5px; }
+    .collectionreport .modal-footer button:hover {
+      background: #143B29; }
+    .collectionreport .modal-footer .cancle:hover {
+      background: transparent;
+      color: #143B29; }
+  .collectionreport ::-webkit-scrollbar {
+    width: 3px; }
+  .collectionreport ::-webkit-scrollbar-track {
+    background: #fff; }
+  .collectionreport ::-webkit-scrollbar-thumb {
+    background: #888; }
+  .collectionreport ::-webkit-scrollbar-thumb:hover {
+    background: #555; }
+  .collectionreport .binstatus {
+    max-height: 340px;
+    overflow: auto;
+    padding-top: 10px;
+    padding-right: 26px; }
+    .collectionreport .binstatus p {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      line-height: 42px;
+      font-weight: 400;
+      color: #212121;
+      position: relative;
+      border-bottom: 1px solid #BDBDBD;
+      padding-left: 10px; }
+      .collectionreport .binstatus p span {
+        position: absolute;
+        right: 10px;
+        color: #212121; }
+    .collectionreport .binstatus p:last-child {
+      border-bottom: 0; }
 
 .createnewuser {
   /* width */
@@ -3909,17 +4394,167 @@ a:hover {
         font-weight: 300;
         color: #205C40;
         margin-bottom: 5px; }
+      .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification {
+        position: relative;
+        /* Hide the browser's default checkbox */
+        /* Create a custom checkbox */
+        /* On mouse-over, add a grey background color */
+        /* When the checkbox is checked, add a blue background */
+        /* Create the checkmark/indicator (hidden when not checked) */
+        /* Show the checkmark when checked */
+        /* Style the checkmark/indicator */ }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .deleteallnoti {
+          position: absolute;
+          right: 0;
+          top: 5px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 15px;
+          line-height: 21px;
+          color: #212121;
+          font-weight: 400; }
+          .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .deleteallnoti img {
+            margin-top: -5px; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .deleteallnoti_de {
+          visibility: hidden;
+          opacity: 0; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .container_checkbox {
+          display: block;
+          position: relative;
+          padding-left: 40px;
+          cursor: pointer;
+          margin: 0;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 15px;
+          line-height: 21px;
+          color: #212121;
+          font-weight: 400;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          padding-top: 5px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #9E9E9E; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification label:last-child {
+          margin-bottom: 0; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .container_checkbox input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .checkmark {
+          position: absolute;
+          top: 6px;
+          left: 5px;
+          height: 18px;
+          width: 18px;
+          border: 2px solid #53565A;
+          border-radius: 3px;
+          -webkit-transition: all .15s ease;
+          -moz-transition: all .15s ease;
+          -ms-transition: all .15s ease;
+          -o-transition: all .15s ease;
+          transition: all .15s ease; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .container_checkbox:hover input ~ .checkmark {
+          background-color: #53565A; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .container_checkbox input:checked ~ .checkmark {
+          background-color: #53565A; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .container_checkbox input:checked ~ .checkmark:after {
+          display: block; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .container_checkbox .checkmark:after {
+          left: 4px;
+          top: 0px;
+          width: 6px;
+          height: 12px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
       .user_managment_profile .mainrow .right_side .not_cont .notifications .notification {
-        background: #DDE7EB;
+        background: transparent;
         width: 100%;
         padding: 0px;
         position: relative;
         padding-right: 60px;
+        border-bottom: 1px solid #9E9E9E;
+        padding-left: 30px;
+        /* Hide the browser's default checkbox */
+        /* Create a custom checkbox */
+        /* On mouse-over, add a grey background color */
+        /* When the checkbox is checked, add a blue background */
+        /* Create the checkmark/indicator (hidden when not checked) */
+        /* Show the checkmark when checked */
+        /* Style the checkmark/indicator */
         -webkit-transition: all .25s ease;
         -moz-transition: all .25s ease;
         -ms-transition: all .25s ease;
         -o-transition: all .25s ease;
         transition: all .25s ease; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .container_checkbox {
+          display: block;
+          position: relative;
+          padding-left: 30px;
+          cursor: pointer;
+          margin: 0;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 15px;
+          line-height: 21px;
+          color: #212121;
+          font-weight: 400;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          position: absolute;
+          left: 5px;
+          top: 5px; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .notification label:last-child {
+          margin-bottom: 0; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .container_checkbox input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .checkmark {
+          position: absolute;
+          top: 6px;
+          left: 0;
+          height: 18px;
+          width: 18px;
+          border: 2px solid #53565A;
+          border-radius: 3px;
+          -webkit-transition: all .15s ease;
+          -moz-transition: all .15s ease;
+          -ms-transition: all .15s ease;
+          -o-transition: all .15s ease;
+          transition: all .15s ease; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .container_checkbox:hover input ~ .checkmark {
+          background-color: #53565A; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .container_checkbox input:checked ~ .checkmark {
+          background-color: #53565A; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .container_checkbox input:checked ~ .checkmark:after {
+          display: block; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .container_checkbox .checkmark:after {
+          left: 4px;
+          top: 0px;
+          width: 6px;
+          height: 12px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
         .user_managment_profile .mainrow .right_side .not_cont .notifications .notification a {
           display: block;
           padding: 10px; }
@@ -3929,16 +4564,14 @@ a:hover {
           font-family: 'Montserrat', sans-serif;
           font-size: 15px;
           font-weight: 600;
-          color: #212121;
-          margin-bottom: 5px; }
+          color: #212121; }
         .user_managment_profile .mainrow .right_side .not_cont .notifications .notification p {
           margin: 0;
           padding: 0;
           font-family: 'Montserrat', sans-serif;
           font-size: 12px;
           font-weight: 400;
-          color: #212121;
-          margin-bottom: 5px; }
+          color: #212121; }
         .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .date {
           opacity: 0.6;
           margin-bottom: 0; }
@@ -3948,10 +4581,14 @@ a:hover {
           right: 0;
           top: 5px;
           bottom: 5px;
-          border-left: 1px solid #205C40;
           padding-left: 16px;
-          padding-right: 16px;
-          width: 57px; }
+          padding-right: 5px;
+          width: 25px;
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+          transition: all .25s ease; }
           .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .bind_db img {
             position: absolute;
             display: block;
@@ -3962,7 +4599,7 @@ a:hover {
             margin: auto; }
           .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .bind_db span {
             position: absolute;
-            right: 46px;
+            right: 33px;
             top: 50%;
             transform: translateY(-50%);
             background: #205C40;
@@ -3996,15 +4633,14 @@ a:hover {
               position: absolute;
               right: -28px;
               top: 14px; }
+        .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .bind_db_disabled {
+          visibility: visible;
+          display: none; }
         .user_managment_profile .mainrow .right_side .not_cont .notifications .notification .bind_db:hover span {
           visibility: visible;
           opacity: 1; }
-      .user_managment_profile .mainrow .right_side .not_cont .notifications .notification:nth-child(even) {
-        background: #F4F5FA; }
       .user_managment_profile .mainrow .right_side .not_cont .notifications .notification:hover {
-        background: #D0E5E7; }
-      .user_managment_profile .mainrow .right_side .not_cont .notifications .notification:nth-child(even):hover {
-        background: #E9F0F5; }
+        background: transparent; }
       .user_managment_profile .mainrow .right_side .settings_cont {
         max-width: 471px; }
         .user_managment_profile .mainrow .right_side .settings_cont h2 {
@@ -4253,9 +4889,6 @@ a:hover {
   50% {
     height: 40px; } }
 
-.apexcharts-legend, .apexcharts-toolbar {
-  display: none !important; }
-
 .chart_place {
   position: relative; }
   .chart_place .carousel-item {
@@ -4277,7 +4910,7 @@ a:hover {
 
 .df_tablepage .placefortable_precinct tbody td:last-child {
   position: relative;
-  min-width: 150px; }
+  min-width: 230px; }
   .df_tablepage .placefortable_precinct tbody td:last-child .cont {
     position: absolute;
     right: 0;
@@ -4287,6 +4920,18 @@ a:hover {
     padding-left: 15px;
     padding-right: 15px;
     min-height: 42px; }
+
+.forbntonmobile {
+  position: relative; }
+  .forbntonmobile button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    opacity: 0; }
+  .forbntonmobile input {
+    padding-right: 50px; }
 
 .dashboard .map_row .councildetails_box_precinct .select_dropdown3 .dropdown-menu {
   transform: unset !important;

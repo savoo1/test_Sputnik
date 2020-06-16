@@ -1,3 +1,109 @@
+$(".user_managment_profile .mainrow .right_side .not_cont .notifications .selectallnotification .selectallclick_notif input").click(function () {
+   if($(this).is(":checked")){
+    $(this).parent().parent().parent().find(".notification input").not(this).prop('checked', this.checked);
+    $(".deleteallnoti").removeClass("deleteallnoti_de");
+    $(this).parent().parent().parent().find(".notification .bind_db").removeClass("bind_db_disabled");
+   }else{
+    $(this).parent().parent().parent().find(".notification input").not(this).prop('checked', false);  
+    $(".deleteallnoti").addClass("deleteallnoti_de");
+    $(this).parent().parent().parent().find(".notification .bind_db").addClass("bind_db_disabled");
+   }
+});
+
+$(".notifications .cont_notiff .notification .container_checkbox").click(function () {
+    
+    if($(this).find("input").is(":checked")){
+      $(this).parent().parent().find(".bind_db").removeClass("bind_db_disabled");
+    }else{
+      $(this).parent().parent().find(".bind_db").addClass("bind_db_disabled");
+    }
+
+
+   var i = 0;
+   var j = 0;
+   var count = $(".notifications .cont_notiff .notification input").length;
+
+   $(this).parent().parent().parent().find("input").each(function(m) {
+        j++;
+      if($(this).is(":checked")){
+        i++;
+      }else{
+        i--;
+      }
+
+        if (m+1 === count) {
+            if(j == i){
+                $(this).parent().parent().parent().parent().parent().find(".selectallclick_notif input").not(this).prop('checked', this.checked); 
+                $(".deleteallnoti").removeClass("deleteallnoti_de");
+            }else{
+                $(this).parent().parent().parent().parent().parent().find(".selectallclick_notif input").not(this).prop('checked', false);  
+                $(".deleteallnoti").addClass("deleteallnoti_de");
+            }
+        }
+   });
+   
+});
+
+
+
+
+
+$(".overvie_information_sec .cont .insidecont .box_card").click(function (e) {
+  e.preventDefault();
+  if ($(window).width() < 991) {
+    $(".top_nav").removeClass("top_nav_overinfo_opened");
+    $(".overvie_information_sec").removeClass("overvie_information_sec_active");
+  }
+});
+
+
+
+
+
+$(".bins_modal .selectallbin .selectallclick input").click(function () {
+   if($(this).is(":checked")){
+    $(this).parent().parent().parent().parent().parent().find(".checkboxes input").not(this).prop('checked', this.checked);
+   }else{
+    $(this).parent().parent().parent().parent().parent().find(".checkboxes input").not(this).prop('checked', false);  
+   }
+});
+
+$(".bins_modal .checkboxes .container_checkbox").click(function () {
+   var i = 0;
+   var j = 0;
+   var count = $(".bins_modal .checkboxes input").length;
+
+   $(this).parent().find("input").each(function(m) {
+        j++;
+      if($(this).is(":checked")){
+        i++;
+      }else{
+        i--;
+      }
+
+        if (m+1 === count) {
+            if(j == i){
+                $(this).parent().parent().parent().find(".selectallclick input").not(this).prop('checked', this.checked); 
+            }else{
+                $(this).parent().parent().parent().find(".selectallclick input").not(this).prop('checked', false);  
+            }
+        }
+   });
+   
+});
+
+$( ".dashboard .least_collections .body_part .rightside .btn_foricons" ).click(function(e) {
+  e.preventDefault();
+  if($(this).hasClass("activebtn")){
+   
+  }else{
+    $(".btn_foricons").removeClass("activebtn");
+    $(this).addClass("activebtn")
+  }
+});
+
+
+
 $( ".top_nav .overviewinfo" ).click(function(e) {
 	e.preventDefault();
 	if($(".top_nav").hasClass("top_nav_overinfo_opened")){

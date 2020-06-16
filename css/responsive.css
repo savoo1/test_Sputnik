@@ -10,13 +10,29 @@
   display: none; }
 
 @media (max-width: 1350px) {
+  .dashboard .dashboard_totalr_row .rightside {
+    position: relative;
+    margin-top: 20px;
+    width: 100%; }
+  .dashboard .dashboard_totalr_row .leftside {
+    width: 100%; }
   .dashboard .boxes_row .box h1 {
     font-size: 13px; }
   .dashboard .boxes_row .box h3 {
     font-size: 30px;
     line-height: 36px; }
   .dashboard .chart_area .options_row {
-    min-width: calc(100% + 43px); } }
+    min-width: calc(100% + 43px); }
+  .df_tablepage .placefortable tbody .add_remove td:nth-child(4) {
+    min-width: 305px !important; }
+  .dashboard .least_collections .body_part .rightside {
+    position: relative;
+    width: 100%;
+    right: unset;
+    left: unset;
+    margin-top: 15px; }
+  .dashboard .least_collections .body_part .leftsidemap {
+    width: 100%; } }
 
 @media (max-width: 1400px) {
   .dashboard .dashboard_bin .rightside .boxes_row2 .box {
@@ -211,20 +227,44 @@
     margin-top: 30px; } }
 
 @media (max-width: 772px) {
+  .daterangepicker.ltr {
+    min-width: unset;
+    padding-left: 10px;
+    padding-bottom: 60px;
+    min-height: unset; }
+  .daterangepicker .ranges ul {
+    display: none; }
+  .daterangepicker.ltr .ranges {
+    float: unset !important;
+    text-align: center;
+    margin-bottom: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: unset; }
   .dashboard .map_row .totalprecincts_box {
     width: 100%;
     position: relative;
     margin-top: 10px; }
+  .user_managment_profile .mainrow .left_side .cont ul li:first-child {
+    border: 0; }
   .user_managment_profile .mainrow .left_side .cont ul {
-    display: flex;
-    justify-content: space-between; }
+    text-align: center; }
     .user_managment_profile .mainrow .left_side .cont ul li {
-      border: 0; }
+      border: 0;
+      width: 46px;
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 5px; }
       .user_managment_profile .mainrow .left_side .cont ul li a {
         min-height: 40px;
         padding-right: 0; }
       .user_managment_profile .mainrow .left_side .cont ul li .onmobile {
         display: none; }
+    .user_managment_profile .mainrow .left_side .cont ul li:first-child {
+      margin-left: 0; }
+    .user_managment_profile .mainrow .left_side .cont ul li:last-child {
+      margin-right: 0; }
   .user_managment_profile .positionofpage {
     display: none; }
   .user_managment_profile .mainrow .left_side .cont {
@@ -243,7 +283,9 @@
   .df_tablepage .placefortable tbody tr td:last-child:after {
     display: none; }
   .daterangepicker.ltr {
-    width: 280px; }
+    width: 260px; }
+  .daterangepicker .prev {
+    left: 15px; }
   .dashboard .map_row .councildetails_box {
     width: 100%;
     max-width: 100%; }
@@ -317,7 +359,21 @@
     font-size: 13px;
     margin-top: 5px; }
   .addnewelement form .uploadfilearea .filehere #progress {
-    max-width: 200px; } }
+    max-width: 200px; }
+  .dashboard .chart_area .options_row .leftarea_otions h2 span {
+    display: none; }
+  .dashboard .dashboard_totalr_row .rightside .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .dashboard .dashboard_totalr_row .rightside .box .bodyarea_forp, .dashboard .dashboard_totalr_row .rightside .box .bodyarea_forp2 {
+    height: 255px; }
+  .dashboard .dashboard_totalr_row .rightside .box {
+    height: 301px;
+    margin-bottom: 20px; }
+  .dashboard .dashboard_totalr_row {
+    min-height: 1085px; }
+  .dashboard .dashboard_totalr_row .chart_area .chart_place {
+    max-width: 100%; } }
 
 @media (max-width: 420px) {
   .top_nav_overinfo_opened .overviewinfo {
@@ -330,7 +386,10 @@
     right: -77px !important; }
   .dashboard .dashboard_bin .rightside .boxes_row2 .box {
     width: 100%;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .dashboard .least_collections .body_part .rightside .btn_foricons {
+    font-size: 13px;
+    padding-left: 10px; } }
 
 @media (max-width: 400px) {
   .dashboard .boxes_row .box {
